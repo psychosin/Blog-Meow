@@ -1377,10 +1377,10 @@ html *::-webkit-scrollbar-track {
   }
 }
 body {
-  background: url("/images/222.jpeg/");
+  background: (css color name css颜色名称) 'MistyRose' | (color code 颜色代码) '#FFE4E1';
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   transition: background 0.5s ease-out;
   -moz-transition: background 0.5s ease-out;
   -webkit-transition: background 0.5s ease-out;
