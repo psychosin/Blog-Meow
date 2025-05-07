@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>My Postcrossing Life</title>
+      <link href="/2025/05/04/postcard/"/>
+      <url>/2025/05/04/postcard/</url>
+      
+        <content type="html"><![CDATA[<p>Recently,I’ve exchanged postcards on instagram and facebook,here is my outgoing.I just created an Instagram account yesterday to connect with people for postcard exchanges. However, after sending a few DMs, my account was suddenly restricted. I immediately submitted an appeal and anxiously waited, assuming I might lose the account for good. To my surprise, it was restored within an hour! The experience made me cautious—I’ll avoid aggressive liking or messaging for now.<br>Work has been quiet today, with little on my plate. I considered sourcing some products, but many items are hard to find reliable Chinese suppliers for, as they’re rarely manufactured locally.<br>This week, I’m excited to attend a collaborative postcard-design event in Chengdu—my first time joining such a meetup! I look forward to meeting fellow enthusiasts and brainstorming creative ideas together.</p><div class="image-scroll-container">  <div class="image-wrapper">    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314124.jpg" alt="风景图">      <div class="image-caption">图1：铁道之旅</div>    </div>    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314188.jpg" alt="城市风光">      <div class="image-caption">图2：现代都市夜景</div>    </div>    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314188.jpg" alt="城市风光">      <div class="image-caption">图2：现代都市夜景</div>    </div>    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314188.jpg" alt="城市风光">      <div class="image-caption">图2：现代都市夜景</div>    </div>    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314188.jpg" alt="城市风光">      <div class="image-caption">图2：现代都市夜景</div>    </div>    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314188.jpg" alt="城市风光">      <div class="image-caption">图2：现代都市夜景</div>    </div>    <!-- 更多图片 -->  </div>  <div class="scroll-hint">← scoll to see more →</div></div><style>  .image-scroll-container {    width: 100%;    position: relative;    overflow-x: auto;    scroll-behavior: smooth;    scroll-snap-type: x mandatory;    -webkit-overflow-scrolling: touch;    padding-bottom: 30px; /* 为提示留空间 */  }    .image-wrapper {    display: flex;    gap: 15px;    padding: 10px;  }    .image-item {    position: relative;    flex: 0 0 auto;    scroll-snap-align: start;  }    .image-item img {    width: 80vw;    height: 50vh;    object-fit: cover;    border-radius: 8px;    box-shadow: 0 4px 8px rgba(191, 221, 154, 0.1);  }    .image-caption {    position: absolute;    bottom: 0;    left: 0;    right: 0;    background: rgba(233, 128, 140, 0.6);    color: white;    padding: 8px 12px;    text-align: center;    border-bottom-left-radius: 8px;    border-bottom-right-radius: 8px;  }    .scroll-hint {    position: absolute;    bottom: 5px;    left: 50%;    transform: translateX(-50%);    background: rgba(26, 127, 251, 0.7);    color: white;    padding: 5px 30px;    border-radius: 30px;    font-size: 14px;    animation: pulse 2s infinite;    white-space: nowrap;    text-align: center;   }    @keyframes pulse {    0% { opacity: 0.6; }    50% { opacity: 1; }    100% { opacity: 0.6; }  }  </style><script>  // 添加滚动进度指示  const container = document.querySelector('.image-scroll-container');  const progressBar = document.createElement('div');  progressBar.className = 'scroll-progress';  container.appendChild(progressBar);    // 更新滚动进度  container.addEventListener('scroll', () => {    const scrollWidth = container.scrollWidth - container.clientWidth;    const scrollLeft = container.scrollLeft;    const progress = (scrollLeft / scrollWidth) * 100;    progressBar.style.width = `${progress}%`;      });</script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>my body training record</title>
       <link href="/2025/05/04/my-training-record/"/>
       <url>/2025/05/04/my-training-record/</url>
@@ -21,7 +34,7 @@
       <link href="/2025/05/03/japanese/"/>
       <url>/2025/05/03/japanese/</url>
       
-        <content type="html"><![CDATA[<p>　古代から、似た物語はたくさんある。ドラマ（注1）作りで大事なのは新しい筋立て（注2）やエピソードを無理やりひねり出すことより、作者独自の考え方を、ドラマに載せて表現することなのだろう。十代の私は、そう気づいた。しかし「自分の考え」をどうやって確立するか。自分の考えのつもりでも、人の意見に引きずられているかもしれない。</p><p>　そこで新聞を使った「修業」を思いついた。毎朝、新聞を適当に開き、目をつぶって紙面を指す。そして指先に触れたところに載っていた記事の中の人物になりきって「この後、どうすればこの問題が解決するか。どう振舞うのがベストなのか。」を毎日、真剣に想像した。</p><p>　これを繰り返すうち、自分なりの考え方をきちんと言葉で表現する大切さが分かってきた。そして自分が何を表現したのかも、おぼろげ（注3）ながら見えてきた。</p><p>　突き詰めると、私は「ヒロインが何を考えているか」を描きたかったのだ。</p><p>　それまでの少女漫画には、主人公である少女が能動的に動く物語が少ないように感じていた。それよりヒロインの喜怒哀楽、感情が描かれることが多かった。でも私は、自ら考え決心して生き方を選ぶ少女を描きたかった。</p><p>　そのため私の作品では、何かを決意するまでのヒロインの試行錯誤が長い。第一読者である担当編集者には「理屈っぽい」と言われ続けている。「ヒロインが泣くときに読者が共感してくれるんだ」とアドバイスされても、泣く前に考える女性を描き続けた。</p>]]></content>
+        <content type="html"><![CDATA[<p>　</p>]]></content>
       
       
       
@@ -43,19 +56,6 @@
             <tag> daily happy </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>postcard</title>
-      <link href="/2025/05/02/postcard/"/>
-      <url>/2025/05/02/postcard/</url>
-      
-        <content type="html"><![CDATA[<p>Recently,I’ve exchanged postcards on instagram and facebook,here is my outgoing.I just created an Instagram account yesterday to connect with people for postcard exchanges. However, after sending a few DMs, my account was suddenly restricted. I immediately submitted an appeal and anxiously waited, assuming I might lose the account for good. To my surprise, it was restored within an hour! The experience made me cautious—I’ll avoid aggressive liking or messaging for now.<br>Work has been quiet today, with little on my plate. I considered sourcing some products, but many items are hard to find reliable Chinese suppliers for, as they’re rarely manufactured locally.<br>This week, I’m excited to attend a collaborative postcard-design event in Chengdu—my first time joining such a meetup! I look forward to meeting fellow enthusiasts and brainstorming creative ideas together.</p><div class="image-scroll-container">  <div class="image-wrapper">    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314124.jpg" alt="风景图">      <div class="image-caption">图1：铁道之旅</div>    </div>    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314188.jpg" alt="城市风光">      <div class="image-caption">图2：现代都市夜景</div>    </div>    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314188.jpg" alt="城市风光">      <div class="image-caption">图2：现代都市夜景</div>    </div>    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314188.jpg" alt="城市风光">      <div class="image-caption">图2：现代都市夜景</div>    </div>    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314188.jpg" alt="城市风光">      <div class="image-caption">图2：现代都市夜景</div>    </div>    <div class="image-item">      <img src="https://blog-1357580636.cos.ap-chengdu.myqcloud.com/Blog/202505031314188.jpg" alt="城市风光">      <div class="image-caption">图2：现代都市夜景</div>    </div>    <!-- 更多图片 -->  </div>  <div class="scroll-hint">← scoll to see more →</div></div><style>  .image-scroll-container {    width: 100%;    position: relative;    overflow-x: auto;    scroll-behavior: smooth;    scroll-snap-type: x mandatory;    -webkit-overflow-scrolling: touch;    padding-bottom: 30px; /* 为提示留空间 */  }    .image-wrapper {    display: flex;    gap: 15px;    padding: 10px;  }    .image-item {    position: relative;    flex: 0 0 auto;    scroll-snap-align: start;  }    .image-item img {    width: 80vw;    height: 50vh;    object-fit: cover;    border-radius: 8px;    box-shadow: 0 4px 8px rgba(191, 221, 154, 0.1);  }    .image-caption {    position: absolute;    bottom: 0;    left: 0;    right: 0;    background: rgba(233, 128, 140, 0.6);    color: white;    padding: 8px 12px;    text-align: center;    border-bottom-left-radius: 8px;    border-bottom-right-radius: 8px;  }    .scroll-hint {    position: absolute;    bottom: 5px;    left: 50%;    transform: translateX(-50%);    background: rgba(26, 127, 251, 0.7);    color: white;    padding: 5px 30px;    border-radius: 30px;    font-size: 14px;    animation: pulse 2s infinite;    white-space: nowrap;    text-align: center;   }    @keyframes pulse {    0% { opacity: 0.6; }    50% { opacity: 1; }    100% { opacity: 0.6; }  }  </style><script>  // 添加滚动进度指示  const container = document.querySelector('.image-scroll-container');  const progressBar = document.createElement('div');  progressBar.className = 'scroll-progress';  container.appendChild(progressBar);    // 更新滚动进度  container.addEventListener('scroll', () => {    const scrollWidth = container.scrollWidth - container.clientWidth;    const scrollLeft = container.scrollLeft;    const progress = (scrollLeft / scrollWidth) * 100;    progressBar.style.width = `${progress}%`;      });</script>]]></content>
-      
-      
       
     </entry>
     
