@@ -8,7 +8,7 @@
       <link href="/2025/05/10/music-review/"/>
       <url>/2025/05/10/music-review/</url>
       
-        <content type="html"><![CDATA[<div id="aplayer"></div><script>  const ap = new APlayer({    container: document.getElementById('aplayer'),    audio: [{      name: 'name',      artist: 'artist',      url: 'https://music.163.com/#/album?id=268410842',      cover: 'cover.jpg'    }]  });</script>]]></content>
+        <content type="html"><![CDATA[<div id="aplayer"></div><script>  const ap = new APlayer({    container: document.getElementById('aplayer'),    audio: [{      name: 'name',      artist: 'artist',      url: 'https://app.soundstripe.com/songs/16931',      cover: 'cover.jpg'    }]  });</script>]]></content>
       
       
       
