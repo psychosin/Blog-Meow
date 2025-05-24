@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2025/05/24/staticpage/test/"/>
-      <url>/2025/05/24/staticpage/test/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><style>.responsive-images {  display: flex;  flex-wrap: wrap;  gap: 10px;}.responsive-images img {  width: 100%;  max-width: 300px; /* 可调整每张图片最大宽度 */  height: auto;  flex: 1 1 300px;  box-sizing: border-box;}/* 手机端：每行只显示一张 */@media (max-width: 600px) {  .responsive-images {    flex-direction: column;    gap: 10px;  }  .responsive-images img {    max-width: 100%;  }}</style>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>postcard wall</title>
       <link href="/2025/05/24/postcard-wall/"/>
       <url>/2025/05/24/postcard-wall/</url>
