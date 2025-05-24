@@ -1722,6 +1722,11 @@ body .main .main-content {
     font-size: 26px;
   }
 }
+.post-content p {
+  text-indent: 2em; /* 2em 相当于两个中文字符宽度 */
+  margin: 0; /* 去除默认段落间距（可选） */
+  padding: 0; /* 去除默认内边距（可选） */
+}
 .blog-info {
   margin: 20px auto;
   display: flex;
