@@ -1,23 +1,19 @@
-function openTopMenu() {
-  'use strict';
-  var hiddenMenu = document.getElementById('top-menu-hidden');
-  if (hiddenMenu.getAttribute('menu-show')) {
-    hiddenMenu.removeAttribute('menu-show')
-    hiddenMenu.style.display = 'none';
-  } else {
-    hiddenMenu.setAttribute('menu-show', true);
-    hiddenMenu.style.display = 'flex';
-  }
-}
+/* 
+ * hexo theme meow
+ * menu (header) scripts
+ */
 
-function closeTopMenu() {
-  'use strict';
-  var hiddenMenu = document.getElementById('top-menu-hidden');
-  if (hiddenMenu.getAttribute('menu-show')) {
-    hiddenMenu.removeAttribute('menu-show')
-    hiddenMenu.style.display = 'none';
-  } else {
-    hiddenMenu.setAttribute('menu-show', true);
-    hiddenMenu.style.display = 'flex';
-  }
-}
+const initMenu = () => {
+  const menuAside = document.getElementById('menu-aside');
+  document.getElementById('menu-btn').addEventListener('click', function () {
+      menuAside.setAttribute("open", "");
+    });
+
+  menuAside.addEventListener('click', event => {
+    if (event.target === menuAside) {
+      menuAside.removeAttribute('open');
+    }
+  });
+};
+
+export default initMenu;

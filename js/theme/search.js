@@ -1,130 +1,93 @@
-var searchFunc = function(path, search_id, content_id) {
-  'use strict';
-  $.ajax({
-    url: path,
-    dataType: "xml",
-    success: function( xmlResponse ) {
-      // get the contents from search data
-      var datas = $( "entry", xmlResponse ).map(function() {
-        return {
-          title: $( "title", this ).text(),
-          content: $("content",this).text(),
-          url: $( "url" , this).text()
-        };
-      }).get();
+/* 
+ * hexo theme meow
+ * search function scripts
+ */
 
-      var $input = document.getElementById(search_id);
-      if (!$input) return;
-      var $resultContent = document.getElementById(content_id);
-      var searchCount = document.getElementById('search-count');
-      var initSearchCount = searchCount.innerText;
-      var searchEmpty = document.getElementById('search-result-empty');
-      if ($("#search-input").length > 0) {
-        $input.addEventListener('input', function () {
-          $resultContent.innerHTML = "";
-          if (this.value.trim().length <= 0) {
-            searchCount.removeAttribute('search-count-show');
-            return;
-          }
-          var str = '<ul class=\"search-result-list\">';
-          var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-          var matchCount = 0;
-
-          // perform local searching
-          datas.forEach(function (data) {
-            var isMatch = true;
-            // var content_index = [];
-            if (!data.title || data.title.trim() === '') {
-              data.title = "Untitled";
-            }
-            var data_title = data.title.trim().toLowerCase();
-            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-            var data_url = data.url;
-            var index_title = -1;
-            var index_content = -1;
-            var first_occur = -1;
-            // only match artiles with not empty contents
-            if (data_content !== '') {
-              keywords.forEach(function (keyword, i) {
-                index_title = data_title.indexOf(keyword);
-                index_content = data_content.indexOf(keyword);
-
-                if (index_title < 0 && index_content < 0) {
-                  isMatch = false;
-                } else {
-                  if (index_content < 0) {
-                    index_content = 0;
-                  }
-                  if (i == 0) {
-                    first_occur = index_content;
-                  }
-                  // content_index.push({index_content:index_content, keyword_len:keyword_len});
-                }
-              });
-            } else {
-              isMatch = false;
-            }
-            // show search results
-            if (isMatch) {
-              matchCount++;
-              str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-              var content = data.content.trim().replace(/<[^>]+>/g, "");
-              if (first_occur >= 0) {
-                // cut out 100 characters
-                var start = first_occur - 20;
-                var end = first_occur + 80;
-
-                if (start < 0) {
-                  start = 0;
-                }
-
-                if (start == 0) {
-                  end = 100;
-                }
-
-                if (end > content.length) {
-                  end = content.length;
-                }
-
-                var match_content = content.substring(start, end);
-
-                // highlight all keywords
-                keywords.forEach(function (keyword) {
-                  var regS = new RegExp(keyword, "gi");
-                  match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                });
-
-                str += "<p class=\"search-result-content\">" + match_content + "...</p>"
-              }
-              str += "</li>";
-            }
-          });
-          str += "</ul>";
-
-          // show special notes if no matched article
-          if (matchCount <= 0) {
-            $resultContent.innerHTML = "";
-            searchCount.removeAttribute('search-count-show');
-            searchEmpty.setAttribute('search-empty-show', true);
-            return;
-          }
-
-          $resultContent.innerHTML = str;
-          searchCount.setAttribute('search-count-show', true);
-          searchCount.innerText = initSearchCount + matchCount;
-          searchEmpty.removeAttribute('search-empty-show');
-        });
-      }
+const initSearch = () => {
+  const initLocalSearch = () => {
+    if (!GLOBALCONFIG.search.path) {
+      console.warn('`hexo-generator-searchdb` plugin is not installed!');
+      return;
     }
-  });
-}
+    const localSearch = new LocalSearch({
+      path: GLOBALCONFIG.root + GLOBALCONFIG.search.path,
+      top_n_per_article: GLOBALCONFIG.search.local.top_n_per_article,
+      unescape: false
+    });
 
-function toggleSearchWindow(){
-  'use strict';
-  var searchPanel = document.getElementById('search-panel');
-  if (searchPanel.getAttribute('search-show')) {
-    searchPanel.removeAttribute('search-show')
-  } else {
-    searchPanel.setAttribute('search-show', true);
-  }
-}
+    const input = document.querySelector('#search-input');
+    const container = document.querySelector('.search-result-container');
+    const searchOverlay = document.querySelector('.search-overlay');
+
+    const inputEventFunction = () => {
+      if (!localSearch.isfetched) return;
+      const searchText = input.value.trim().toLowerCase();
+      const keywords = searchText.split(/[-\s]+/);
+      let resultItems = [];
+      if (searchText.length > 0) {
+        // Perform local searching
+        resultItems = localSearch.getResultItems(keywords);
+      }
+      if (keywords.length === 1 && keywords[0] === '') {
+        container.innerHTML = '<div class="search-result-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg></div>';
+      } else if (resultItems.length === 0) {
+        container.innerHTML = '<div class="search-result-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg></div>';
+      } else {
+        resultItems.sort((left, right) => {
+          if (left.includedCount !== right.includedCount) {
+            return right.includedCount - left.includedCount;
+          } else if (left.hitCount !== right.hitCount) {
+            return right.hitCount - left.hitCount;
+          }
+          return right.id - left.id;
+        });
+
+        // Remove highlight searchparams at target page
+        container.innerHTML = `<div class="search-stats">${resultItems.length + ' results found'}</div><ul class="search-result-list">${resultItems.map(result => result.item.replace(/(<a href="[^\?]+)\?highlight=[^"]+"( class|>)/g, `$1"$2`)).join('')}</ul>`;
+      }
+    };
+
+    // Highlight keywords at target page
+    // localSearch.highlightSearchWords(document.querySelector('.post'));
+    if (GLOBALCONFIG.search.local.preload) {
+      localSearch.fetchData();
+    }
+
+    input.addEventListener('input', inputEventFunction);
+    window.addEventListener('search:loaded', inputEventFunction);
+
+    // Handle and trigger popup window
+    document.getElementById('search-btn').addEventListener('click', () => {
+      if (searchOverlay.hasAttribute("active")) {
+        searchOverlay.removeAttribute("active");
+      } else {
+        searchOverlay.setAttribute("active", "");
+      }
+
+      // Wait for search-popup animation to complete
+      setTimeout(() => input.focus(), 500);
+      if (!localSearch.isfetched) localSearch.fetchData();
+    });
+
+    // Monitor main search box
+    const onPopupClose = () => {
+      searchOverlay.removeAttribute("active");
+    };
+
+    searchOverlay.addEventListener('click', event => {
+      if (event.target === searchOverlay) {
+        onPopupClose();
+      }
+    });
+    document.querySelector('.search-close-btn').addEventListener('click', onPopupClose);
+    window.addEventListener('keyup', event => {
+      if (event.key === 'Escape') {
+        onPopupClose();
+      }
+    });
+  };
+
+  initLocalSearch();
+};
+
+export default initSearch;

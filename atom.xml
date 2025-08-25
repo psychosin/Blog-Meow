@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>愛してる</title>
+  <icon>http://example.com/icon.png</icon>
+  <subtitle>好きよ～</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2025-05-24T08:39:41.554Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Cyksin Humbert</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>postcard wall</title>
+    <link href="http://example.com/2025/05/24/postcard-wall/"/>
+    <id>http://example.com/2025/05/24/postcard-wall/</id>
+    <published>2025-05-24T08:34:16.000Z</published>
+    <updated>2025-05-24T08:39:41.554Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>music review</title>
+    <link href="http://example.com/2025/05/10/music-review/"/>
+    <id>http://example.com/2025/05/10/music-review/</id>
+    <published>2025-05-10T11:20:08.000Z</published>
+    <updated>2025-05-10T12:59:20.288Z</updated>
+    
+    
+    <summary type="html">here are music that I like,and i comment on them.</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>My Postcrossing Life</title>
+    <link href="http://example.com/2025/05/04/postcard/"/>
+    <id>http://example.com/2025/05/04/postcard/</id>
+    <published>2025-05-04T13:27:12.000Z</published>
+    <updated>2025-05-11T06:35:42.319Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="postcard" scheme="http://example.com/tags/postcard/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>my body training record</title>
+    <link href="http://example.com/2025/05/04/my-training-record/"/>
+    <id>http://example.com/2025/05/04/my-training-record/</id>
+    <published>2025-05-04T06:14:13.000Z</published>
+    <updated>2025-05-24T08:33:23.923Z</updated>
+    
+    
+    <summary type="html">this is the summary of my workout.</summary>
+    
+    
+    
+    
+    <category term="exercise" scheme="http://example.com/tags/exercise/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>日常の記録</title>
+    <link href="http://example.com/2025/05/03/japanese/"/>
+    <id>http://example.com/2025/05/03/japanese/</id>
+    <published>2025-05-03T10:55:47.000Z</published>
+    <updated>2025-05-15T13:15:37.545Z</updated>
+    
+    
+    <summary type="html">これは私が日本語で書いた日常の記録です.</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>farm</title>
+    <link href="http://example.com/2025/05/03/farm/"/>
+    <id>http://example.com/2025/05/03/farm/</id>
+    <published>2025-05-03T04:54:27.000Z</published>
+    <updated>2025-05-11T06:34:26.276Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="daily" scheme="http://example.com/tags/daily/"/>
+    
+    <category term="happy" scheme="http://example.com/tags/happy/"/>
+    
+  </entry>
+  
+</feed>
