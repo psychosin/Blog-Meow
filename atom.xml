@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-09-02T12:02:07.748Z</updated>
+  <updated>2025-09-06T13:16:19.133Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,66 +17,14 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test_2</title>
-    <link href="http://example.com/2025/09/02/test-2/"/>
-    <id>http://example.com/2025/09/02/test-2/</id>
-    <published>2025-09-02T11:53:49.000Z</published>
-    <updated>2025-09-02T12:02:07.748Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="tresadadad" scheme="http://example.com/categories/tresadadad/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test_1</title>
-    <link href="http://example.com/2025/09/02/test-1/"/>
-    <id>http://example.com/2025/09/02/test-1/</id>
-    <published>2025-09-02T11:53:23.000Z</published>
-    <updated>2025-09-02T11:59:04.207Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="13133131313" scheme="http://example.com/tags/13133131313/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>shouzhang</title>
+    <title>my journal</title>
     <link href="http://example.com/2025/08/31/shouzhang/"/>
     <id>http://example.com/2025/08/31/shouzhang/</id>
     <published>2025-08-31T04:28:59.000Z</published>
-    <updated>2025-08-31T04:28:59.349Z</updated>
+    <updated>2025-09-06T13:16:19.133Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
-        
-      
+    <summary type="html">this is the summary of my journal.</summary>
     
     
     
