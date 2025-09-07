@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-09-07T05:54:34.686Z</updated>
+  <updated>2025-09-07T08:05:05.743Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,16 +17,81 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>❤Travel to YunNan</title>
+    <link href="http://example.com/2025/09/07/travel-to-YunNan/"/>
+    <id>http://example.com/2025/09/07/travel-to-YunNan/</id>
+    <published>2025-09-07T06:19:34.000Z</published>
+    <updated>2025-09-07T08:05:05.743Z</updated>
+    
+    
+    <summary type="html">The travel of YunNan was fun.</summary>
+    
+    
+    
+    <category term="Life" scheme="http://example.com/categories/Life/"/>
+    
+    
+    <category term="Travel" scheme="http://example.com/tags/Travel/"/>
+    
+  </entry>
+  
+  <entry>
     <title>my journal</title>
     <link href="http://example.com/2025/08/31/shouzhang/"/>
     <id>http://example.com/2025/08/31/shouzhang/</id>
     <published>2025-08-31T04:28:59.000Z</published>
-    <updated>2025-09-07T05:54:34.686Z</updated>
+    <updated>2025-09-07T06:17:13.460Z</updated>
     
     
     <summary type="html">this is the summary of my journal.</summary>
     
     
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Korean</title>
+    <link href="http://example.com/2025/08/07/Korean/"/>
+    <id>http://example.com/2025/08/07/Korean/</id>
+    <published>2025-08-07T06:27:58.000Z</published>
+    <updated>2025-09-07T07:17:32.437Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Language" scheme="http://example.com/categories/Language/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>French</title>
+    <link href="http://example.com/2025/08/07/French/"/>
+    <id>http://example.com/2025/08/07/French/</id>
+    <published>2025-08-07T06:27:47.000Z</published>
+    <updated>2025-09-07T07:17:49.866Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Language" scheme="http://example.com/categories/Language/"/>
     
     
   </entry>
@@ -112,12 +177,14 @@
     <link href="http://example.com/2025/05/03/japanese/"/>
     <id>http://example.com/2025/05/03/japanese/</id>
     <published>2025-05-03T10:55:47.000Z</published>
-    <updated>2025-05-15T13:15:37.545Z</updated>
+    <updated>2025-09-07T06:28:53.414Z</updated>
     
     
     <summary type="html">これは私が日本語で書いた日常の記録です.</summary>
     
     
+    
+    <category term="Language" scheme="http://example.com/categories/Language/"/>
     
     
   </entry>
